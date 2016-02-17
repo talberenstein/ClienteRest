@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    </head>
+    <body>
+    	<div class="container">
+    		<div class="item">
+    			<h1>Articulos</h1>
+    		</div>
+    		<div class="item">
+    			<input type="search" class="texto-derecha" id="articuloId" name="articuloId" placeholder="Id Articulo" />
+    		</div>
+    		<div class="item">
+    			<button id="btnGetArticle">Buscar</button>
+    		</div>
+    		<div class="item">
+    			<div id="vista"></div>
+    		</div>
+    		<div class="item">
+    			<h2>Crear Artículo</h2>
+    			<form id="frmCrear" method="post" action="#">
+    				<label for="titulo_articulo">Título</label>
+    				<input type="text" id="titulo_articulo" name="titulo_articulo" />
+    				<label for="contenido_articulo">Contenido</label>
+    				<textarea name="contenido_articulo" id="contenido_articulo"></textarea>
+    				<button id="btnAddarticle">Crear</button>
+    			</form>
+    		</div>
+    	</div>
+
+		<template id="template">
+			<div class="articulo">
+				<label>ID</label>
+				<input type="number" class="articuloId" readonly />
+				<h3 class="titulo"></h3>
+				<p class="contenido"></p>
+				<label>Autor</label>
+				<input type="text" class="autor" readonly>
+				<label>Creado</label>
+				<input type="text" class="creado" readonly>
+			</div>
+		</template>
+		<script src="js/codigos2.js"></script>
+
+    </body>
+</html>
